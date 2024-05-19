@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder with Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .folder {
+            width: 200px;
+            border: 1px solid #000;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .folder-title {
+            font-weight: bold;
+        }
+
+        .folder-contents {
+            margin-top: 10px;
+            display: none;
+        }
+
+        .file {
+            margin-top: 5px;
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .event {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="folder" onclick="toggleFolder()">
+        <div class="folder-title">Folder<img src="Folder.jpeg" height="200px" width="200px"> <i class="fa fa-folder"></i>
+            <i class="fa fa-folder" style="font-size:24px"></i>
+            <i class="fa fa-folder" style="font-size:36px"></i>
+            <i class="fa fa-folder" style="font-size:48px;color:red"></i>
+            <br>
+            <button style="font-size:24px">Button <i class="fa fa-folder"></i></button>
+            </div>
+        <div class="folder-contents" id="folderContents">
+            <div class="file" onclick="showEvent('event1')">Event -1 </div>
+            <div class="file" onclick="showEvent('event2')">Event -2 </div>
+            <div class="file" onclick="showEvent('event3')">Event -3 </div>
+            <div class="file" onclick="showEvent('event4')">Event -4 </div>
+        </div>
+    </div>
+
+    <div id="event1" class="event" style="display:none;">
+        <h2>Event -1 (EVENTS IN LONDON)</h2>
+        
+        <p>Art, history, and ethnic diversity all come together at events in London. The calendar is dotted with sporting events, dazzling exhibitions, and breathtaking fireworks. The Big Smoke thrives on its long-lived historic landmarks like the Tower of London and Buckingham Palace amidst the contemporary modern structures! The Theatre Capital spreads a charming aura into its people.</p>
+        <br>
+        <p>Things to do in London </p>
+        <br>
+        <img src="pic1.png" alt="Event 1 Image" height="250px" width="250px">
+        <img src="pic2.png" alt="Event 1 Image" height="250px" width="250px">
+        <img src="pic3.png" alt="Event 1 Image" height="250px" width="250px">
+        <img src="pic4.png" alt="Event 1 Image" height="250px" width="250px">
+        <br>
+        <img src="pic5.png" alt="Event 1 Image" height="250px" width="250px">
+        <img src="pic6.png" alt="Event 1 Image" height="250px" width="250px">
+        <img src="pic7.png" alt="Event 1 Image" height="250px" width="250px">
+        <img src="pic8.png" alt="Event 1 Image" height="250px" width="250px">
+        <p>London has a vibrant events calendar throughout the year. Here are some highlights for 2024:
+        <br>
+        <br>
+            Month of January:
+            <br>
+            New Year’s Day Parade: A spectacular parade with performers from around the world marching through central London.
+            <br>
+            Christmas at Kew: Explore Kew Gardens illuminated with thousands of twinkling lights.
+            <br>
+            Hogwarts in the Snow: Visit Warner Bros. Studio Tour London to see Harry Potter film sets transformed for winter.
+            <br>
+            Burns Night: Celebrate Scottish poet Robert Burns with traditional dinners and whisky toasts1.
+            <br>
+            <br>
+            <img src="pic9.png" alt="Event 1 Image" height="500px" width="500px">
+            <br>
+            <img src="pic10.png" alt="Event 1 Image" height="500px" width="500px">
+            <br>
+            Month of February:
+            <br>
+            Chinese New Year: Join the largest celebration outside Asia, including a parade and festival in Trafalgar Square.
+            <br>
+            February Half-Term: Enjoy family-friendly activities and interactive museum visits</p>
+    </div>
+    <div id="event2" class="event" style="display:none;">
+        <h2>Event -2 (EVENTS IN NEW YORK) </h2>
+        <p>Things to do in London </p>
+        <br>
+        <img src="pic11.png" alt="Event 2 Image" height="250px" width="250px">
+        <img src="pic12.png" alt="Event 2 Image" height="250px" width="250px">
+        <img src="pic13.png" alt="Event 2 Image" height="250px" width="250px">
+        <img src="pic14.png" alt="Event 2 Image" height="250px" width="250px">
+        <br>
+        <img src="pic15.png" alt="Event 2 Image" height="250px" width="250px">
+        <img src="pic16.png" alt="Event 2 Image" height="250px" width="250px">
+        <img src="pic17.png" alt="Event 2 Image" height="250px" width="250px">
+        <img src="pic18.png" alt="Event 2 Image" height="250px" width="250px">
+        <br>
+        <p>New York City is always bustling with exciting events. Here are some happening right now:
+        <br>
+            1.$10 Second Sundays at Fotografiska New York: Enjoy reduced-price museum admission every second Sunday of the month at Fotografiska New York. Explore art, sip wine, and immerse yourself in culture.
+            <br>
+            2.Daniel Arsham: PHASES Exhibition: Visit Fotografiska New York to see the first-ever exhibition dedicated to artist Daniel Arsham’s photography practice. Arsham, known for his sculptures and design collaborations, showcases his photographic work.
+            <br>
+            <img src="pic19.png" alt="Event 2 Image" height="500px" width="500px">
+            <img src="pic20.png" alt="Event 2 Image" height="500px" width="500px">
+            <br>
+            3.Human / Nature: Encountering Ourselves in the Natural World: This exhibition at Fotografiska New York features global perspectives on Earth’s complex relationship with its human inhabitants. Through photographs, video installations, and sculptures, 14 international artists provoke reflection.
+            <br>
+            4.Brown Sugar Comedy Show: Head to Shrine Bar for a night of laughter with talented comedians from the US and Canada. Hosted by Ishmael J Gaynor, this show promises amazing jokes and good vibes.
+            <br>
+            5.NYC Mother’s Day Hip Hop vs. Caribbean Jewel Yacht Party Cruise: Celebrate Mother’s Day on a yacht cruise with hip-hop and Caribbean vibes. Join the party on the Hudson River at Skyport Marina Jewel Yacht.
+            <br>
+            6."My True Love!”: Catch this wildly comedic and sharp-witted fairytale that breaks down stereotypes of love at The Players Theatre.</p>
+    </div>
+    <div id="event3" class="event" style="display:none;">
+        <h2>Event -3 (EVENTS IN DELHI) </h2>
+        <p>Delhi is the capital of India, so it's obvious the heart and soul of the country lies right here! The festivals and events in Delhi are unmatched. Monthly food festivals, marathons, workshops, arts and crafts events, and extravagant exhibitions are just some examples! Street art at Lodhi Art District, shopping at the budget-friendly Sarojini Market, or iconic food carts at Chandi Chowk, there are endless things to do in Delhi. Explore the unknown streets of Delhi with us.</p>
+        <br>
+        <img src="pic21.png" alt="Event 2 Image" height="700px" width="700px">
+        <br>
+        <p> Delhi, the vibrant capital of India, hosts a plethora of exciting events across various domains. Here are some upcoming events in Delhi that you might find interesting:
+            <br>
+            1.Franchise India (FI24): The 20th edition of the World’s Largest International Franchise & Retail Show will take place at the India International Convention And Expo Center in New Delhi. It’s an excellent opportunity for business enthusiasts interested in franchising and retailing.
+            <br>
+            2.Educatus Expo Delhi: Shaping the Future of Young Minds, this event focuses on education and training. It’s happening at Pragati Maidan in New Delhi.
+            <br>
+            3.India Med Expo (IME): This exhibition at the INDIA EXPO CENTRE & MART in Greater Noida (near Delhi) showcases medical, surgical instruments, hospital equipment, and consumables.
+            <br>
+            <img src="pic22.png" alt="Event 2 Image" height="500px" width="500px">
+            <br>
+            <img src="pic23.png" alt="Event 2 Image" height="500px" width="500px">
+            <br>
+            4.Conference on Solar Power in India: Discuss recent trends and developments in the solar sector at Le Meridien New Delhi. Share experiences from successful projects and deliberate on the next steps to address solar energy challenges.
+            <br>
+            5.Snack & BakeTec: A global trade fair for snacks, bakery, and confectionery processing and packaging technology. The latest edition will emphasize crucial technologies to optimize production.
+            <br>
+            6.Ayush Shala Expo: India’s Only Wide-Ranging Health And Wellness Expo, happening alongside other events at the INDIA EXPO CENTRE & MART in Greater Noida.
+            <br>
+            7.Biodegradable Expo: A three-day trade exhibition focusing on biodegradable and sustainable products, machinery, raw materials, and allied industries</p>
+
+       
+    </div>
+    <div id="event4" class="event" style="display:none;">
+        <h2>Event -4 (EVENTS IN MELBOURNE) </h2>
+        <p>Things to do in Melbourne </p>
+        <img src="pic31.png" alt="Event 4 Image" height="700px" width="700px">
+        <p>Australia, is a vibrant city with a rich cultural scene and plenty of exciting events. Here are some happening right now:
+           <br>
+            1.Monopoly Dreams: Immerse yourself in a fully interactive Monopoly experience, complete with games and challenges.
+            <br>
+            2.Queen Victoria Market: Explore the largest open-air market in the southern hemisphere. It’s a beloved Melbourne landmark with a wide variety of offerings.
+            <br>
+            3.Kensington Market: Discover an eclectic mix of designer fashion, culinary treats, ceramics, homewares, and visual art.
+            <br>
+            <img src="pic32.png" alt="Event 2 Image" height="500px" width="500px">
+            <br>
+            <img src="pic33.png" alt="Event 2 Image" height="500px" width="500px">
+            <br>
+            4.Melbourne Book Market: Browse through over 5,000 new and pre-loved titles at this curated book market.
+            <br>
+            5.The Big Design Market: Almost Winter: Enjoy a showcase of over 200 independent Australian designers, along with delicious food and wine.
+            <br>
+            6.Donut Festival: Melbourne’s favorite Donut Festival returns to Queen Victoria Market.
+            <br>
+            7.Gardening 4 Kids: During the spring school holidays, join a fun-filled gardening experience with Gardening 4 Kids</p> 
+    </div>
+
+    <script>
+        function toggleFolder() {
+            const folderContents = document.getElementById('folderContents');
+            if (folderContents.style.display === 'none' || folderContents.style.display === '') {
+                folderContents.style.display = 'block';
+            } else {
+                folderContents.style.display = 'none';
+            }
+        }
+
+        function showEvent(eventId) {
+            const event = document.getElementById(eventId);
+            const eventContent = `
+                <html>
+                <head>
+                    <title>${event.querySelector('h2').innerText}</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            margin: 20px;
+                        }
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    </style>
+                </head>
+                <body>
+                    ${event.innerHTML}
+                </body>
+                </html>
+            `;
+            const popupWindow = window.open('', '', 'width=600,height=400');
+            popupWindow.document.write(eventContent);
+            popupWindow.document.close();
+        }
+    </script>
+</body>
+</html>
